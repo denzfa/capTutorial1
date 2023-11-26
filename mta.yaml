@@ -23,15 +23,15 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: cpapp-auth
-      - name: cpapp-db
+      - name: bookstore-db
 
-  - name: cpapp-db-deployer
+  - name: bookstore-db-deployer
     type: hdb
     path: gen/db
     parameters:
       buildpack: nodejs_buildpack
     requires:
-      - name: cpapp-db
+      - name: bookstore-db
 
 resources:
   - name: cpapp-auth
@@ -43,7 +43,7 @@ resources:
       config:
         xsappname: cpapp-${org}-${space}
         tenant-mode: dedicated
-  - name: cpapp-db
+  - name: bookstore-db
     type: com.sap.xs.hdi-container
     parameters:
       service: hana

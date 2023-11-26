@@ -2,7 +2,7 @@
   "name": "cpapp",
   "version": "1.0.0",
   "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "repository": "https://github.com/denzfa/capTutorial1.git",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -15,10 +15,7 @@
   "devDependencies": {
     "@cap-js/sqlite": "^1",
     "@sap/cds-dk": "^7",
-    "@sap/ux-specification": "^1.108.18",
-    "engines": {
-      "node": "^16"
-    }
+    "@sap/ux-specification": "^1.108.18"
   },
   "scripts": {
     "start": "cds-serve",
